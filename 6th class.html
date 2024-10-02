@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Glenn Maxwell</title></head>
+    <body>
+        <h1 id="one">Melbourne,Australia</h1>
+        <p>Melbourne Cricket Ground is 2nd largest stadium</p>
+
+
+        <button type="button" onclick="maxwell()">Click the button</button>
+        <p id="ab"></p>
+        <script src="script.js"></script>
+
+
+
+        <h1>Real the validation using js</h1>
+        <hr>
+        <form id="loginform" onsubmit="validate(event)">
+            <fieldset>
+                <div>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <div>
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" min="15" max="50">
+                </div>
+                <button type="submit">Login</button>
+            </fieldset>
+        </form>
+
+        
+        <script>
+            var text = document.getElementById("one").innerHTML;
+            alert("Melbourne Cricket Ground is situated in " + text);
+        </script>
+    </body>
+</html>
